@@ -1,0 +1,13 @@
+
+#preview {
+    background-color: #eee;
+    min-height: 200px;
+    max-height: 500vh;
+    width: 50%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+#preview img {
+    max-width: 20%;
+}

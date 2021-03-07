@@ -1,8 +1,13 @@
+import marked from "marked"
+import "./preview.css"
+
 function Preview({value}) {
     return (
-        <div className="preview">
-        <label for="preview">preview</label>
-        <textarea id="preview" name="preview" rows="4" cols="50"  value={value}></textarea>
+      <div className="preview">
+        <h6 for="preview">Preview</h6>
+        <div id="preview" dangerouslySetInnerHTML={{__html: marked(value, {breaks: true})}}></div>
+
+        
       </div>
     )
 }
